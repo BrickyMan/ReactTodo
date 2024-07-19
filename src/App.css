@@ -1,0 +1,32 @@
+#root {
+    min-height: 100vh;
+    background-color: rgb(213, 234, 238);
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.editBG {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -1;
+    transition: .3s ease;
+}
+
+.editBG.active {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}

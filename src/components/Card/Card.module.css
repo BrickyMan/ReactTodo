@@ -1,0 +1,89 @@
+
+.card {
+    position: relative;
+    padding: 5px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.card.done p {
+    text-decoration: line-through;
+}
+
+.cardMain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cardMain p {
+    padding-left: 5px;
+}
+
+.cardMain input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(213, 234, 238, 0.5);
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.cardActions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.card button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.card button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.2;
+}
+
+.card button i {
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    transition: .2s ease;
+}
+
+.cardEdit i:hover {
+    color: rgb(0, 154, 185);
+}
+
+.cardRemove i:hover, .cardEditCancel i:hover {
+    color: rgb(202, 71, 0);
+}
+
+.cardEditSave i:hover {
+    color: rgb(71, 185, 0);
+}
+
+.card.inEdit {
+    z-index: 20;
+}
+
+.editControls {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 5px;
+    position: absolute;
+    bottom: -40px;
+    left: 60px;
+    display: flex;
+    gap: 10px;
+}
